@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactList = ({ visibleContact, deleteContact }) => {
   return (
-    <div>
+    visibleContact.length > 0 && (
       <ul className="list-group">
         {visibleContact.map(({ name, number, id }) => {
           return (
@@ -24,7 +24,7 @@ const ContactList = ({ visibleContact, deleteContact }) => {
           );
         })}
       </ul>
-    </div>
+    )
   );
 };
 

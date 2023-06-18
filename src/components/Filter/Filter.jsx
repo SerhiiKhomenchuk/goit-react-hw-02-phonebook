@@ -15,6 +15,7 @@ const Filter = ({ value, onChange, cleanFilter }) => {
           type="button"
           className="btn btn-outline-secondary"
           onClick={cleanFilter}
+          disabled={!value}
         >
           clean up
         </button>
